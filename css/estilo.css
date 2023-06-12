@@ -97,7 +97,7 @@
 
   .aside { grid-area: aside; 
    background-color: #000000;
-  display: flex;
+   display: flex;
    justify-content: space-between;}
 
    .card1{
@@ -185,6 +185,66 @@ color: #f4efef;}
   text-decoration: none;
   font-size: 14px;
 }
+.container-productos{  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.3fr 0.5fr 2.3fr 1.9fr 0.6fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "nav"
+    "productos"
+    "main"
+    "asaid"
+    "footer";
+}
+
+.header { grid-area: header;
+  background-color: rgb(0, 0, 0); 
+  display: flex; 
+  justify-content: space-between; }
+
+
+.nav { grid-area: nav;
+background-color: #000000; }
+
+
+.productos { grid-area: productos;
+background-color: #000000; }
+.navbar bg-body-tertiary{
+  background-color: #000000;
+}
+.container-fluid{
+  background-color: #000000;
+}
+.nav-link{
+  color: #01ab48;
+}
+.main { grid-area: main;
+  background-color: #000000;
+  display: flex;
+  justify-content:center;
+  }
+  .card{
+    padding: 5px;
+    margin: 30px;
+  }
+
+.asaid { grid-area: asaid;
+  }
+ 
+  .carousel-item{
+  display: flex;
+  justify-content: center;
+  }
+
+
+ h3{
+  padding: 20px;
+  color: aliceblue;
+ }
+.footer { grid-area: footer; }
 
 
 @media screen and (max-width:600px){
