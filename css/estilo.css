@@ -21,7 +21,7 @@ body {
   justify-content: space-between; }
   .hedear .titulo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #f7f7f5;
+    color: white;
     display: grid;
     justify-content: center; }
   .hedear .registro {
@@ -30,24 +30,24 @@ body {
     margin: 20px auto;
     display: flex;
     justify-content: start; }
-    .hedear .registro li {
+    .hedear .registro .li {
       display: inline-block;
       text-align: center; }
-      .hedear .registro li a {
+      .hedear .registro .li .a {
         padding: 5px;
         margin: 3px;
-        color: #ffffff;
+        color: #78dc76;
         text-decoration: none; }
-        .hedear .registro li a:hover {
-          color: #180c71;
-          background-color: #f4efef;
-          border-radius: 20%; }
+        .hedear .registro .li .a:hover {
+          color: #78dc76;
+          background-color: black;
+          border-radius: 10%; }
 
 nav {
   grid-area: nav;
   background-color: black; }
   nav ul {
-    background-color: #000000;
+    background-color: black;
     float: right;
     margin-right: 20px; }
     nav ul li {
@@ -57,21 +57,21 @@ nav {
       nav ul li a {
         padding: 5px;
         margin: 20px;
-        color: #339e33;
+        color: #78dc76;
         text-decoration: none;
         border-radius: 3px; }
         nav ul li a:hover {
-          color: #239c3d;
-          background-color: #0a250a;
-          border-radius: 20%; }
+          color: black;
+          background-color: #78dc76;
+          border-radius: 10%; }
 
 .main {
   grid-area: main;
-  background-color: #000000; }
+  background-color: black; }
 
 .aside {
   grid-area: aside;
-  background-color: #000000;
+  background-color: black;
   display: flex;
   justify-content: space-between; }
   .aside .card1 {
@@ -103,10 +103,10 @@ aside .form-floating mb-3 {
 
 .main {
   grid-area: main;
-  background-color: #000000;
+  background-color: black;
   margin: 10px;
   padding: 10px;
-  color: #f4efef; }
+  color: white; }
 
 .formIngresar {
   width: 400px;
@@ -114,7 +114,7 @@ aside .form-floating mb-3 {
   background: #4f4e4e;
   margin: auto;
   margin-top: 180px;
-  box-shadow: 7px 13px 37px #000000;
+  box-shadow: 7px 13px 37px black;
   padding: 20px 30px;
   border-top: 4px solid #0a250a;
   color: white; }
@@ -189,21 +189,22 @@ header {
 
 .nav {
   grid-area: nav;
-  background-color: #000000; }
+  background-color: black; }
 
 .productos {
   grid-area: productos;
-  background-color: #000000; }
+  background-color: black; }
   .productos .navbar bg-body-tertiary {
-    background-color: #000000; }
+    background-color: #78dc76; }
   .productos .container-fluid {
-    background-color: #000000; }
+    background-color: black; }
   .productos .nav-link {
-    color: #01ab48; }
+    color: #78dc76;
+    background-color: black; }
 
 .main {
   grid-area: main;
-  background-color: #000000;
+  background-color: black;
   display: flex;
   justify-content: center; }
   .main .card {

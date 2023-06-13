@@ -1,8 +1,13 @@
+$color-bg:black;
+ $color-n:rgb(120, 220, 118);
+$letra:white;
+
 * { margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+   }
 body{
-    background-color: black;
+    background-color: $color-bg;
 
 } 
 .container {  display: grid;
@@ -18,34 +23,34 @@ body{
       "footer footer";
 }
 .hedear { 
-    background-color: rgb(0, 0, 0); 
+    background-color:$color-bg; 
     display: flex;
     grid-area: hedear; 
     justify-content: space-between;
     .titulo{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(247, 247, 245);
+        color: $letra;
         display: grid;
         justify-content: center ;
        }
-       .registro {
+        .registro{
         padding: 20px;
         list-style: none;
         margin: 20px auto;
         display: flex;
         justify-content: start;
-          li{
+          .li{
             display: inline-block ;
             text-align: center;
-             a {
+             .a{
                  padding: 5px;
                   margin: 3px;
-                  color: #ffffff;
+                  color: $color-n;
                   text-decoration: none;
-                  &:hover{
-                    color: rgb(24, 12, 113);
-                    background-color: #f4efef;
-                    border-radius: 20%;
+                   &:hover{
+                    color:$color-n;
+                    background-color:$color-bg;
+                    border-radius: 10%;
                     }
               
                 }
@@ -56,9 +61,9 @@ body{
         
 } 
 nav { grid-area: nav;
-    background-color: black;
+    background-color:$color-bg;
      ul{
-        background-color: #000000;
+        background-color: $color-bg;
         float: right;
         margin-right: 20px;
          li{
@@ -68,23 +73,23 @@ nav { grid-area: nav;
              a{
                 padding: 5px;
                 margin: 20px;
-                color: #339e33;
+                color:$color-n;
                 text-decoration: none;
                 border-radius: 3px;  
-                &:hover{
-                    color: rgb(35, 156, 61);
-                    background-color: #0a250a;
-                    border-radius: 20%;
+                 &:hover{
+                    color:$color-bg;
+                    background-color: $color-n;
+                    border-radius: 10%;
                 }                          
              }
          }
       }
     }
     .main { grid-area: main; 
-        background-color: #000000;
+        background-color: $color-bg;
     }
     .aside { grid-area: aside; 
-        background-color: #000000;
+        background-color:$color-bg;
         display: flex;
         justify-content: space-between;
         .card1{
@@ -97,7 +102,7 @@ nav { grid-area: nav;
     .footer { grid-area: footer; 
         padding: 10px;
         margin: 10px;
-        background-color: rgb(0, 0, 0);
+        background-color:$color-bg;
         display: flex;
         justify-content: space-around;
          .redes{
@@ -123,10 +128,10 @@ nav { grid-area: nav;
           }          
       }     
       .main { grid-area: main;
-        background-color: #000000;
+        background-color:$color-bg;
        margin: 10px;
        padding: 10px;
-       color: #f4efef;}
+       color: $letra;}
        
 .formIngresar{
   width: 400px;
@@ -134,7 +139,7 @@ nav { grid-area: nav;
   background: #4f4e4e;
   margin: auto;
   margin-top: 180px;
-  box-shadow: 7px 13px 37px #000000;
+  box-shadow: 7px 13px 37px $color-bg;
   padding: 20px 30px;
   border-top: 4px solid #0a250a;
   color: white;
@@ -190,7 +195,7 @@ nav { grid-area: nav;
       "footer";
   }
   header { grid-area: header;
-        background-color: rgb(0, 0, 0); 
+        background-color:$color-bg; 
         display: flex;
         justify-content: space-between;
         .titulo{
@@ -227,23 +232,24 @@ nav { grid-area: nav;
             
     } 
 .nav { grid-area: nav;
-        background-color: #000000; 
+        background-color: $color-bg; 
      }
 .productos { grid-area: productos;
-             background-color: #000000;
+             background-color:$color-bg;
           .navbar bg-body-tertiary{
-               background-color: #000000;
+               background-color: $color-n;
              }
          .container-fluid{
-               background-color: #000000;
+               background-color: $color-bg;
             }
           .nav-link{
-             color: #01ab48;
+             color:$color-n;
+             background-color: $color-bg;
           }
         }   
  
  .main { grid-area: main;
-            background-color: #000000;
+            background-color: $color-bg;
             display: flex;
             justify-content:center;
             .card{
@@ -261,7 +267,7 @@ nav { grid-area: nav;
             justify-content: center;
             }
       }
-      .footer { grid-area: footer; 
+  .footer { grid-area: footer; 
          }
       
          @media screen and (max-width:600px){
