@@ -12,7 +12,11 @@ body {
   grid-template-rows: 0.2fr 0.1fr 1.7fr 1.6fr 0.5fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "hedear hedear" "nav nav" "main main" "aside aside" "footer footer"; }
+  grid-template-areas: "hedear hedear"
+ "nav nav"
+ "main main"
+ "aside aside"
+ "footer footer"; }
 
 .hedear {
   background-color: black;
@@ -75,9 +79,16 @@ nav {
   display: flex;
   justify-content: space-between; }
   .aside .card1 {
-    background-color: beige; }
+    background-color: beige; 
+    transition: all 2s;
+  }
     .aside .card1 img {
       width: 200; }
+.card1:hover{
+  width: 50px;
+  transform:scale(1.2)
+}
+
 
 .footer {
   grid-area: footer;
@@ -96,7 +107,11 @@ nav {
   grid-template-rows: 0.4fr 0.3fr 1.7fr 2fr 0.6fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "hedear hedear" "nav nav" "main asaid" "main asaid" "footer footer"; }
+  grid-template-areas: "hedear hedear"
+ "nav nav"
+ "main asaid"
+ "main asaid"
+ "footer footer"; }
 
 aside .form-floating mb-3 {
   padding: 10px; }
@@ -156,7 +171,12 @@ aside .form-floating mb-3 {
   grid-auto-columns: 1fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "header" "nav" "productos" "main" "asaid" "footer"; }
+  grid-template-areas: "header"
+ "nav"
+ "productos"
+ "main"
+ "asaid"
+ "footer"; }
 
 header {
   grid-area: header;
@@ -209,7 +229,12 @@ header {
   justify-content: center; }
   .main .card {
     padding: 5px;
-    margin: 30px; }
+    margin: 30px; 
+    transition: all 0.8s;}
+    .card:hover{
+      width: 10px;
+      transform:scale(1.1);
+    }
 
 .asaid {
   grid-area: asaid; }
@@ -219,7 +244,6 @@ header {
   .asaid .carousel-item {
     display: flex;
     justify-content: center; }
-
 .footer {
   grid-area: footer; }
 
@@ -234,9 +258,17 @@ header {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "hedear" "nav" "main" "aside" "footer"; }
+    grid-template-areas: "hedear"
+ "nav"
+ "main"
+ "aside"
+ "footer"; }
   .container__contacto {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "hedear" "nav" "main" "asaid" "footer"; } }
+    grid-template-areas: "hedear"
+ "nav"
+ "main"
+ "asaid"
+ "footer"; } }
