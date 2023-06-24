@@ -1,6 +1,7 @@
-$color-bg:black;
- $color-n:rgb(120, 220, 118);
-$letra:white;
+@import "header";
+@import "nav";
+@import "footer";
+@import "var";
 
 * { margin: 0;
     padding: 0;
@@ -22,69 +23,6 @@ body{
       "aside aside"
       "footer footer";
 }
-.hedear { 
-    background-color:$color-bg; 
-    display: flex;
-    grid-area: hedear; 
-    justify-content: space-between;
-    .titulo{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: $letra;
-        display: grid;
-        justify-content: center ;
-       }
-        .registro{
-        padding: 20px;
-        list-style: none;
-        margin: 20px auto;
-        display: flex;
-        justify-content: start;
-          .li{
-            display: inline-block ;
-            text-align: center;
-             .a{
-                 padding: 5px;
-                  margin: 3px;
-                  color: $color-n;
-                  text-decoration: none;
-                   &:hover{
-                    color:$color-n;
-                    background-color:$color-bg;
-                    border-radius: 10%;
-                    }
-              
-                }
-              
-          }
-        
-      }
-        
-} 
-nav { grid-area: nav;
-    background-color:$color-bg;
-     ul{
-        background-color: $color-bg;
-        float: right;
-        margin-right: 20px;
-         li{
-            display: inline-block;
-            line-height: 80px;
-            margin: 0 5px;
-             a{
-                padding: 5px;
-                margin: 20px;
-                color:$color-n;
-                text-decoration: none;
-                border-radius: 3px;  
-                 &:hover{
-                    color:$color-bg;
-                    background-color: $color-n;
-                    border-radius: 10%;
-                }                          
-             }
-         }
-      }
-    }
     .main { grid-area: main; 
         background-color: $color-bg;
     }
@@ -99,17 +37,6 @@ nav { grid-area: nav;
                }            
            }
     }
-    .footer { grid-area: footer; 
-        padding: 10px;
-        margin: 10px;
-        background-color:$color-bg;
-        display: flex;
-        justify-content: space-around;
-         .redes{
-            display: grid;
-            justify-content: center;
-          }
-     }
      .container__contacto {  display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.4fr 0.3fr 1.7fr 2fr 0.6fr;
@@ -194,49 +121,9 @@ nav { grid-area: nav;
       "asaid"
       "footer";
   }
-  header { grid-area: header;
-        background-color:$color-bg; 
-        display: flex;
-        justify-content: space-between;
-        .titulo{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: rgb(247, 247, 245);
-            display: grid;
-            justify-content: center ;
-           }
-           .registro {
-            padding: 20px;
-            list-style: none;
-            margin: 20px auto;
-            display: flex;
-            justify-content: start;
-              li{
-                display: inline-block ;
-                text-align: center;
-                 a {
-                     padding: 5px;
-                      margin: 3px;
-                      color: #ffffff;
-                      text-decoration: none;
-                      &:hover{
-                        color: rgb(24, 12, 113);
-                        background-color: #f4efef;
-                        border-radius: 20%;
-                        }
-                  
-                    }
-                  
-              }
-            
-          }
-            
-    } 
-.nav { grid-area: nav;
-        background-color: $color-bg; 
-     }
 .productos { grid-area: productos;
              background-color:$color-bg;
-          .navbar bg-body-tertiary{
+          .navbar bg-body-tertiary {
                background-color: $color-n;
              }
          .container-fluid{
@@ -275,12 +162,12 @@ nav { grid-area: nav;
             .menu{
              height: 230px;
              flex-direction: column;
-             text-align: center;
+             text-align:center;
             }
              .hedear{
               display: block;
              }
-            .container {  display: grid;
+            .container { display: grid;
               grid-template-columns: auto;
               grid-template-rows: repeat(5, auto);
               grid-template-areas:
@@ -290,6 +177,9 @@ nav { grid-area: nav;
                 "aside"
                 "footer";
               } 
+              header{
+                display: block;
+              }
             .container__contacto {  display: grid;
               grid-template-columns: auto;
               grid-template-rows: repeat(5, auto);
@@ -300,8 +190,28 @@ nav { grid-area: nav;
                 "asaid"
                 "footer";
               }
+              .container-productos{  display: grid;
+                grid-template-columns:auto ;
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas:
+                  "header"
+                  "nav"
+                  "productos"
+                  "main"
+                  "asaid"
+                  "footer";
+              }
+              .hedear{
+                display: block;
+              }
+             .nav{ height: 230px;
+              flex-direction: column;
+              text-align:center;
+             }
+
+             }
           
-          }
+          
                            
           
             

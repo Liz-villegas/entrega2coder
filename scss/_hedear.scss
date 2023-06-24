@@ -1,0 +1,38 @@
+.hedear { 
+    background-color:$color-bg; 
+    display: flex;
+    grid-area: hedear; 
+    justify-content: space-between;
+    .titulo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: $letra;
+        display: grid;
+        justify-content: center ;
+       }
+        .registro{
+        padding: 20px;
+        list-style: none;
+        margin: 20px auto;
+        display: flex;
+        justify-content: start;
+          .li{
+            display: inline-block ;
+            text-align: center;
+             .a{
+                 padding: 5px;
+                  margin: 3px;
+                  color: $color-n;
+                  text-decoration: none;
+                   &:hover{
+                    color:$color-n;
+                    background-color:$color-bg;
+                    border-radius: 10%;
+                    }
+              
+                }
+              
+          }
+        
+      }
+        
+} 

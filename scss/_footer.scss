@@ -1,0 +1,11 @@
+.footer { grid-area: footer; 
+    padding: 10px;
+    margin: 10px;
+    background-color:$color-bg;
+    display: flex;
+    justify-content: space-around;
+     .redes{
+        display: grid;
+        justify-content: center;
+      }
+ }

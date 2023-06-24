@@ -1,0 +1,25 @@
+nav { grid-area: nav;
+    background-color:$color-bg;
+     ul{
+        background-color: $color-bg;
+        float: right;
+        margin-right: 20px;
+         li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+             a{
+                padding: 5px;
+                margin: 20px;
+                color:$color-n;
+                text-decoration: none;
+                border-radius: 3px;  
+                 &:hover{
+                    color:$color-bg;
+                    background-color: $color-n;
+                    border-radius: 10%;
+                }                          
+             }
+         }
+      }
+    }
