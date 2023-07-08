@@ -12,59 +12,59 @@ body {
   grid-template-rows: 0.2fr 0.1fr 1.7fr 1.6fr 0.5fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "hedear hedear"
+  grid-template-areas: "header header"
  "nav nav"
  "main main"
  "aside aside"
  "footer footer"; }
 
-.hedear {
+.header {
   background-color: black;
   display: flex;
   grid-area: hedear;
   justify-content: space-between; }
-  .hedear .titulo {
+  .header .titulo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     display: grid;
     justify-content: center; }
-  .hedear .registro {
+  .header .registro {
     padding: 20px;
     list-style: none;
     margin: 20px auto;
     display: flex;
     justify-content: start; }
-    .hedear .registro .li {
+    .header .registro .li {
       display: inline-block;
       text-align: center; }
-      .hedear .registro .li .a {
+      .header .registro .li .a {
         padding: 5px;
         margin: 3px;
         color: #78dc76;
         text-decoration: none; }
-        .hedear .registro .li .a:hover {
+        .header .registro .li .a:hover {
           color: #78dc76;
           background-color: black;
           border-radius: 10%; }
 
-nav {
+.nav {
   grid-area: nav;
   background-color: black; }
-  nav ul {
+  .nav ul {
     background-color: black;
     float: right;
     margin-right: 20px; }
-    nav ul li {
+    .nav ul li {
       display: inline-block;
       line-height: 80px;
       margin: 0 5px; }
-      nav ul li a {
+      .nav ul li a {
         padding: 5px;
         margin: 20px;
         color: #78dc76;
         text-decoration: none;
         border-radius: 3px; }
-        nav ul li a:hover {
+        .nav ul li a:hover {
           color: black;
           background-color: #78dc76;
           border-radius: 10%; }
@@ -107,10 +107,10 @@ nav {
   grid-template-rows: 0.4fr 0.3fr 1.7fr 2fr 0.6fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "hedear hedear"
+  grid-template-areas: "header header"
  "nav nav"
- "main asaid"
- "main asaid"
+ "main aside"
+ "main aside"
  "footer footer"; }
 
 aside .form-floating mb-3 {
@@ -175,34 +175,34 @@ aside .form-floating mb-3 {
  "nav"
  "productos"
  "main"
- "asaid"
+ "aside"
  "footer"; }
 
-header {
+.header {
   grid-area: header;
   background-color: black;
   display: flex;
   justify-content: space-between; }
-  header .titulo {
+  .header .titulo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f7f7f5;
     display: grid;
     justify-content: center; }
-  header .registro {
+  .header .registro {
     padding: 20px;
     list-style: none;
     margin: 20px auto;
     display: flex;
     justify-content: start; }
-    header .registro li {
+    .header .registro li {
       display: inline-block;
       text-align: center; }
-      header .registro li a {
+      .header .registro li a {
         padding: 5px;
         margin: 3px;
         color: #ffffff;
         text-decoration: none; }
-        header .registro li a:hover {
+        .header .registro li a:hover {
           color: #180c71;
           background-color: #f4efef;
           border-radius: 20%; }
@@ -236,12 +236,12 @@ header {
       transform:scale(1.1);
     }
 
-.asaid {
-  grid-area: asaid; }
-  .asaid h3 {
+.aside {
+  grid-area: aside; }
+  .aside h3 {
     padding: 20px;
     color: aliceblue; }
-  .asaid .carousel-item {
+  .aside .carousel-item {
     display: flex;
     justify-content: center; }
 .footer {
@@ -252,13 +252,13 @@ header {
     height: 230px;
     flex-direction: column;
     text-align: center; }
-  .hedear {
+  .header {
     display: block; }
   .container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "hedear"
+    grid-template-areas: "header"
  "nav"
  "main"
  "aside"
@@ -267,8 +267,8 @@ header {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "hedear"
+    grid-template-areas: "header"
  "nav"
  "main"
- "asaid"
+ "aside"
  "footer"; } }

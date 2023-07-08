@@ -17,7 +17,7 @@ body{
     gap: 1px 1px;
     grid-auto-flow: row;
     grid-template-areas:
-      "hedear hedear"
+      "header header"
       "nav nav"
       "main main"
       "aside aside"
@@ -43,13 +43,13 @@ body{
         gap: 1px 1px;
         grid-auto-flow: row;
         grid-template-areas:
-          "hedear hedear"
+          "header header"
           "nav nav"
-          "main asaid"
-          "main asaid"
+          "main aside"
+          "main aside"
           "footer footer";
      }
-      aside{
+      .aside{
         .form-floating mb-3{
             padding: 10px;
           }          
@@ -118,7 +118,7 @@ body{
       "nav"
       "productos"
       "main"
-      "asaid"
+      "aside"
       "footer";
   }
 .productos { grid-area: productos;
@@ -144,7 +144,7 @@ body{
                 margin: 30px;
               }                   
         }
-     .asaid { grid-area: asaid;
+     .aside { grid-area: aside;
         h3{
             padding: 20px;
             color: aliceblue;
@@ -171,23 +171,23 @@ body{
               grid-template-columns: auto;
               grid-template-rows: repeat(5, auto);
               grid-template-areas:
-                "hedear"
+                "header"
                 "nav"
                 "main"
                 "aside"
                 "footer";
               } 
-              header{
+              .header{
                 display: block;
               }
             .container__contacto {  display: grid;
               grid-template-columns: auto;
               grid-template-rows: repeat(5, auto);
               grid-template-areas:
-                "hedear"
+                "header"
                 "nav"
                 "main"
-                "asaid"
+                "aside"
                 "footer";
               }
               .container-productos{  display: grid;
@@ -198,10 +198,10 @@ body{
                   "nav"
                   "productos"
                   "main"
-                  "asaid"
+                  "aside"
                   "footer";
               }
-              .hedear{
+              .header{
                 display: block;
               }
              .nav{ height: 230px;

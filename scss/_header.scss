@@ -1,7 +1,7 @@
-.hedear { 
+.header { 
     background-color:$color-bg; 
     display: flex;
-    grid-area: hedear; 
+    grid-area: header; 
     justify-content: space-between;
     .titulo{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
